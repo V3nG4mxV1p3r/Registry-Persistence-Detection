@@ -22,6 +22,8 @@ reg add "HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Run" /v "W
 
 <img width="811" height="360" alt="registry_evidence" src="https://github.com/user-attachments/assets/387602e7-495d-429c-a78b-346550a21a4f" />
 
+---
+
 ## 🔍 Phase 2: Detection Engineering & Sysmon Tuning
 By default, capturing registry events can create significant noise and CPU overhead. To ensure high visibility without degrading system performance, I applied surgical tuning to the Sysmon configuration XML, specifically targeting the ```CurrentVersion\Run``` paths (Event IDs 12, 13, 14).
 
